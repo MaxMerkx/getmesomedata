@@ -1,12 +1,12 @@
 # Load the data
-X_train <- read.table("../UCI HAR Dataset/train/X_train.txt", quote="\"")
-y_train <- read.table("../UCI HAR Dataset/train/y_train.txt", quote="\"")
+X_train <- read.table("./UCI HAR Dataset/train/X_train.txt", quote="\"")
+y_train <- read.table("./UCI HAR Dataset/train/y_train.txt", quote="\"")
 
-X_test <- read.table("../UCI HAR Dataset/test/X_test.txt", quote="\"")
-y_test <- read.table("../UCI HAR Dataset/test/y_test.txt", quote="\"")
+X_test <- read.table("./UCI HAR Dataset/test/X_test.txt", quote="\"")
+y_test <- read.table("./UCI HAR Dataset/test/y_test.txt", quote="\"")
 
-features <- read.table("../UCI HAR Dataset/features.txt", quote="\""
-activity_labels <- read.table("../UCI HAR Dataset/activity_labels.txt", quote="\"")
+features <- read.table("./UCI HAR Dataset/features.txt", quote="\"")
+activity_labels <- read.table("./UCI HAR Dataset/activity_labels.txt", quote="\"")
 
 # Rename the columns to show proper variable names
 colnames(X_train) <- features$V2
